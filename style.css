@@ -34,3 +34,17 @@
     color: teal;
     font-weight: bold
 }
+
+.data-header {
+    color: teal;
+    font-weight: bold;
+    text-align: left;
+}
+
+.data-text {
+    text-align:right
+}
+
+.table-head {
+    align-items: left
+}
