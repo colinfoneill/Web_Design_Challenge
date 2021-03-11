@@ -1,0 +1,36 @@
+
+
+
+#background {
+    color: black;
+    font-size: 15px;
+    margin-top: 50px;
+      margin-bottom: 40px;
+      padding: 50px 30px 50px;
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#summary {
+    width:500;
+    height: 1000;
+    background-color:white
+}
+
+#visualizations {
+    width:500;
+    height: 1000;
+    background-color:white 
+}
+
+.image {float:"left"}
+
+.header {
+    color: teal;
+    font-weight:bold
+}
+
+.plot-header {
+    color: teal;
+    font-weight: bold
+}

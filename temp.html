@@ -1,0 +1,96 @@
+<!-- create the html doc and ref to the css stylesheet and ref to bootstrap-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Latitude vs. Temperature</title>
+    </head>
+    
+    
+    <!--start of Navbar-->
+	<div class="navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  ​
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    <!--End of Navbar-->
+    
+    <body>
+        <div class="container">
+           <div class="row">
+               <div class="col-12">
+                   <div class="container">
+                       <div class="row">
+                           <div id="max-temp" class="col-lg-7 col-sm-12">
+                               <h1>Max Temperature</h1>
+                               
+                                   <img src="Resources/assets\images/Fig1.png" alt="City Latitude Vs. Max Temperature" height=350 width=500/>
+                                
+                                <p>
+                                   This is the City Latitude vs. Max Temperature scatter plot. The plot is displaying the relationship between 
+                                   a city's latitude and its max temp on the randomly chosen date of 1/5/17. As shown in the scatter plot, 
+                                   distance from the equator and temperature are strongly correlated, specifically in the Northern Hemisphere (lat>0).
+                                </p>
+                           </div>
+                           <div id="temp-visualization" class="col-lg-4 col-sm-12">
+                               <h1>Visualizations</h1>
+                               <div class="container">
+                                <div class="row">
+                                  <div class = "col-lg-6 col-sm-3">
+                                    <a href="temp.html" target="_self">
+                                      <img src="Resources/assets\images/Fig1.png" alt="City Latitude Vs. Max Temperature" width=200 height=150/>
+                                    </a>
+                                  </div>
+                                  <div class="col-lg-6 col-sm-3">
+                                    <a href="humidity.html" target="_self">
+                                      <img src="Resources/assets\images/Fig2.png" alt="City Latitude Vs. Humidity" width=200 height=150/>
+                                    </a>
+                                  </div>
+                                </div>
+                              
+                                <div class="row">
+                                  <div class="col-lg-6 col-sm-3">
+                                    <a href="cloudiness.html" target="_self">
+                                      <img src="Resources/assets\images/Fig3.png" alt="City Latitude Vs. Cloudiness" width=200 height=150/>
+                                  </a>
+                                  </div>
+                                  <div class="col-lg-6 col-sm-3">
+                                    <a href="windspeed.html" target="_blank">
+                                      <img src="Resources/assets\images/Fig4.png" alt="City Latitude Vs. Wind Speed" width=200 height=150/>
+                                  </a>
+                                  </div>
+                                </div>
+                              </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div> 
+        </div>
+    </body>
+</html>

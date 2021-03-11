@@ -1,0 +1,99 @@
+<!-- create the html doc and ref to the css stylesheet and ref to bootstrap-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <!--start of Navbar-->
+    <div class="navigation">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+​
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  <!--End of Navbar-->
+    
+    <!--start of content-->
+    <body>
+        <!--create main container that holds the entire webpage-->
+        <div id="background" class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="container">
+                  <div class="row">
+                    <div id="summary" class="col-8">
+                      <h1>Summary: Latitude vs. X</h1>
+                      <div class="row">
+                        <div class="col-12">
+                          <p>
+                            <div class="image"><img  src="Resources/assets\images/Fig1.png" alt="City Latitude Vs. Cloudiness" width=300 height=300 align="left"/></div>
+                          
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="visualizations" class = "col-4">
+                      <h1>Visualizations</h1>
+                      <div class="container">
+                        <div class="row">
+                          <div class = "col-6">
+                            <a href="temp.html" target="_self">
+                              <img src="Resources/assets\images/Fig1.png" alt="City Latitude Vs. Max Temperature" width=200 height=200/>
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="humidity.html" target="_self">
+                              <img src="Resources/assets\images/Fig2.png" alt="City Latitude Vs. Humidity" width=200 height=200/>
+                            </a>
+                          </div>
+                        </div>
+                      
+                        <div class="row">
+                          <div class="col-6">
+                            <a href="cloudiness.html" target="_self">
+                              <img src="Resources/assets\images/Fig3.png" alt="City Latitude Vs. Cloudiness" width=200 height=200/>
+                          </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="windspeed.html" target="_blank">
+                              <img src="Resources/assets\images/Fig4.png" alt="City Latitude Vs. Wind Speed" height=200 width=200/>
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>     
+    </body>
+</html>
